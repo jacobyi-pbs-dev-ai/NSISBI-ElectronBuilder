@@ -97,7 +97,7 @@
   ${LangFileString} MUI_TEXT_FINISH_REBOOTLATER "나중에 재부팅 하겠습니다."
   ${LangFileString} MUI_TEXT_FINISH_RUN "$(^NameDA) 실행하기(&R)"
   ${LangFileString} MUI_TEXT_FINISH_SHOWREADME "Readme 파일 보기(&S)"
-  ${LangFileString} MUI_BUTTONTEXT_FINISH "마침"  
+  ${LangFileString} MUI_BUTTONTEXT_FINISH "마침"
 !endif
 
 !ifdef MUI_STARTMENUPAGE
@@ -118,4 +118,12 @@
 
 !ifdef MUI_UNABORTWARNING
   ${LangFileString} MUI_UNTEXT_ABORTWARNING "$(^Name) 제거를 취소하시겠습니까?"
+!endif
+
+!ifdef MULTIUSER_INSTALLMODEPAGE
+  ${LangFileString} MULTIUSER_TEXT_INSTALLMODE_TITLE "설치 옵션 선택"
+  ${LangFileString} MULTIUSER_TEXT_INSTALLMODE_SUBTITLE "$(^NameDA)의 사용자는 누구인가요?"
+  ${LangFileString} MULTIUSER_INNERTEXT_INSTALLMODE_TOP "$(^NameDA)을 모든 사용자가 사용할 수 있도록 할 것인지 아니면 자신만 사용할 수 있도록 할 것인지 선택하십시오. $(^ClickNext)"
+  ${LangFileString} MULTIUSER_INNERTEXT_INSTALLMODE_ALLUSERS "이 컴퓨터를 사용하는 모든 사람"
+  ${LangFileString} MULTIUSER_INNERTEXT_INSTALLMODE_CURRENTUSER "전용"
 !endif
